@@ -1,3 +1,5 @@
+USE ORG;
+
 -- Q-1. Write an SQL query to fetch “FIRST_NAME” from the Worker table using the alias name <WORKER_NAME>.
 
 select FIRST_NAME AS WORKER_NAME from Worker;
@@ -109,7 +111,7 @@ WHERE Salary BETWEEN 50000 AND 100000);
 -- Q-23. Write an SQL query to fetch the number of workers for each department in descending order.
 
 SELECT DEPARTMENT, count(WORKER_ID) No_Of_Workers 
-FROM worker 
+FROM Worker 
 GROUP BY DEPARTMENT 
 ORDER BY No_Of_Workers DESC;
 
